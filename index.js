@@ -4,5 +4,9 @@
 jQuery.noConflict();
 
 // zySlide() 只要轮播的根标签(任何选择器)
-jQuery(".slide").zySlide({speed:1000});
-jQuery("#slide").zySlide({delay:2000,speed:5000});
+jQuery(".slide").zySlide({speed:1000}).css({
+	"backgroundColor": "yellow"
+});
+jQuery("#slide").zySlide({delay:2000,speed:5000}).css({
+	"border":"2px solid red","backgroundColor": "green"
+});
